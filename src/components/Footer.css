@@ -1,0 +1,55 @@
+.main-footer{
+    color:dimgrey;
+    padding-top: 3rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+.col{
+   display: -webkit-box;
+   
+}
+.col1{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+p{
+    margin-left: 325px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+.col2{
+    margin-left: 350px;
+    margin-top: 20px;
+}
+.row{
+    margin-bottom: 50px;
+    margin-left: 630px;
+}
+.r1{
+    margin-right: 20px;
+}
+hr{
+    color: burlywood;
+}
+
+@media only screen and (max-width: 600px){
+      .main-footer{
+        padding-top: 3rem;
+      } 
+      .col{
+        display: block;
+      }
+      .row{
+        margin-bottom: 80px;
+        margin-left: 150px;
+      }
+      p{
+        font-size: 12px;
+        margin-left: 30px;
+      }
+      .col2{
+        margin-left: 28px;
+      }
+
+}

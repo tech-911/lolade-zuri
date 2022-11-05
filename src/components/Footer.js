@@ -8,7 +8,6 @@ import "./Footer.css"
 const Footer = () => {
     return(
         <div className="main-footer">
-          <div className="container">
 
             <div className="row">
                <img src={slackImg} className="r1" id="slack" />
@@ -16,17 +15,16 @@ const Footer = () => {
               </div>  
             
             <hr />
-            <div className="row1">
+          
                <div className="col">
                   <img src={Img1} className="col1" />
 
-                  <p>HNG Internship 9 Frontend Task</p>
+                  <p className="para">HNG Internship 9 Frontend Task</p>
 
                   <img src={Img} className="col2" />
-                   </div>
                 </div>
           </div>
-        </div>
+        
     )
 }
 

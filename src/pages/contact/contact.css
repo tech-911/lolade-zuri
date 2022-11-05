@@ -1,187 +1,257 @@
 #contact-page{
-    width: 100%;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+.container{
+    padding-left: 300px;
+    padding-right: 300px;
 }
 .header{
-    text-align: center;
-    margin: 30px auto;
+    align-items: center;
 }
 .co-me{
-    margin-left:-513px;
-    font-size: 30px;
-    font-weight: 600;
-    color: #101828;
-    
+    font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+      color: #101828;
 }
 .sub{
-    margin-left: -235px;
-    font-size: 15px;
-    color: #475467;
-    font-weight: 400;
-    margin-top: -5px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: #475467;
 }
 .form-section{
-    text-align: center;
-    width: 650px;
-    margin-top: 41px;
-    margin-bottom: 20px;
-    margin-left: 340px;
-    border-radius: 6px;
-    background-color: var(--neutral-white);
-    }
-
-.form-control {
-    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 50px;
 }
-
-.form-inline {
+.form-inline{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
-
-.form-control.first{
-    width: 305px;
-   
- }
-
-.form-control.last{
-    width: 305px;
-    margin-right: 4px;
+.firstname, .lastname{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    gap: 2;
+    margin-bottom: 30px;
 }
-
-.form-control:last-of-type{
-    margin-bottom: 20px;
-}
-
-.form-label {
-    display: block;
-    font-size: 11px;
+.firstname-label{
+    font-family: "Inter";
+    font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    margin-bottom: 2px;
+    font-size: 14px;
+    line-height: 20px;
     color: #344054;
-    text-align: start;
+    margin-bottom: 4px;
 }
-  
-.form-input {
-    width: 100%;
-    border: 1px solid #D0D5DD;
-    border-radius: 4px;
-    outline-color: cadetblue;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    padding: 10px 10px;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-    background-color:  white;
+.firstname-input{
+     box-sizing: border-box;
+     padding: 10px 14px;
+     outline-color: cadetblue;
+     background: #ffffff;
+     border: 1px solid #d0d5dd;
+     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+     border-radius: 5px;
 }
-
-textarea{
-    width: 100%;
-    border: 1px solid #D0D5DD;
-    outline-color: cadetblue;
-    background: var(--faint-black);
-    padding: 15px 20px;
-    margin-top: 2px;
-    margin-bottom: 15px;
-    color: var(--light-brown);
-    font-size: 12px;
-    border-radius: 6px;
-}
-.checkbox{
-   font-size: 12px; 
-   font-weight: 400;
-   color: #475467;
-   text-align: start;
-}
-.submit{
-    margin-top: 40px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    height: 40px;
-    font-size: 12px;
+.lastname-label{
+    font-family: "Inter";
+    font-style: normal;
     font-weight: 500;
-    background-color: #1570EF;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+    margin-bottom: 4px;
+}
+.lastname-input{
+     box-sizing: border-box;
+     padding: 10px 14px;
+     background: #ffffff;
+     outline-color: cadetblue;
+     border: 1px solid #d0d5dd;
+     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+     border-radius: 5px;
+}
+.email, .message{
+    display: flex;
+    flex-direction: column;
+}
+.email-label{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+    margin-bottom: 4px;
+}
+.email-input{
+     box-sizing: border-box;
+     padding: 10px 14px;
+     background: #ffffff;
+     outline-color: cadetblue;
+     border: 1px solid #d0d5dd;
+     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+     border-radius: 5px;
+     margin-bottom: 30px;
+}
+.message-label{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+    margin-bottom: 4px;
+}
+textarea {
+    box-sizing: border-box;
+    padding: 10px 14px;
+    background: #ffffff;
+    border: 1px solid #d0d5dd;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-    color: #FFFFFF;
-}
-.submit:hover{
-    background-color: #68A1EF;
-}
-.submit:active{
-    transform: scale(0.98);
+    border-radius: 8px;
+    outline-color: cadetblue;
   }
-  .r1{
-    display: none;
-  }
-  .r2{
-    display: none;
+  textarea::placeholder {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #667085;
   }
 
-  @media only screen and (max-width: 600px){
-       .co-me{
-        font-size: 30px;
-        margin-left: -100px;
-        
-       }
-       .sub{
+  .checkbox {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 15px;
+  }
+    .span {
+      margin-left: 10px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: #475467;
+    }
+    .submit {
+        font-family: "Inter";
+        font-weight: 500;
         font-size: 13px;
-        margin-left: 20px;
-        text-align: start;
-        width: 80%;
-        margin-top: -10px;
-       }
-       .form-section{
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-        width: 200px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-        border-radius: 2px;
-        background-color: var(--neutral-white);
-       }
-       .form-inline{
-        display: block;
-       }
-       .form-control.first{
-        width:200px;
-       }
-       .form-control.last{
-        width:200px;
-       }
-       textarea{
-         font-size: 10px;
-         width: 100%;
-         padding: 10px 10px;
-         margin-top: 2px;
-         margin-bottom: 15px;
-         border-radius: 2px;
-       }
-       .checkbox{
-        font-size: 10px; 
-     }
-     .submit{
-         margin-top: 40px;
-         border: none;
-         border-radius: 3px;
-         width: 100%;
-         height: 30px;
-         font-size: 10px;
-         font-weight: 500;
-     }
-     .r1{
+        margin-top: 50px;
+        box-sizing: border-box;
+        justify-content: center;
+        padding: 12px 20px;
+        width: 100%;
+        background: #1570ef;
+        border: none;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 15px;
+        color: #ffffff;
+      }
+      .submit:hover{
+        background-color: #68A1EF;
+      }
+      .submit:active{
+        transform: scale(0.98);
+      }
+      .r1{
         display: none;
-     }
-     .r2{
+      }
+      .r2{
         display: none;
-     }
-     .main-footer{
-        padding-top: 1rem ;
-     }
+      }
+      .col{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+      }
+      @media only screen and (max-width: 1200px){
+        .main-footer{
+            color:dimgrey;
+            padding-top: 3rem;
+            position: relative;
+            width: 100%;
+            bottom: 20px;
+        }
+        .col{
+           display: -webkit-box;
+           
+        }
+      }
 
-  }
+      @media only screen and (max-width: 700px){
+
+        #contact-page{
+            padding-top: 20px;
+            overflow-x: hidden;
+        }
+        .container{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .co-me{
+              font-size: 30px;
+              line-height: 20px;
+              letter-spacing: -0.02em;
+        }
+        .sub{
+              font-size: 15px;
+              line-height: 30px;
+              margin-left: 12px;
+        }
+        .form-section{
+           margin-left: 10px;
+        }
+        .form-inline{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .firstname, .lastname{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .checkbox {
+            width: 100%;
+            height: 10px;
+          }
+            .span {
+              font-size: 10px;
+              line-height: 20px;
+              color: #475467;
+            }
+            .main-footer{
+                padding-top: 3rem;
+              } 
+              .col{
+                display: block;
+              }
+              .row{
+                margin-bottom: 80px;
+                margin-left: 150px;
+              }
+              .para{
+                font-size: 12px;
+                margin-left: 30px;
+              }
+              .col2{
+                margin-left: 28px;
+              }
+   }

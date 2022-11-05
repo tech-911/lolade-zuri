@@ -6,21 +6,21 @@ const contact = () => {
 	const [ name, setName ] = useState('Ololade Olatunji');
 	return (
 		<div id="contact-page">
-			<div className="container">
+    <div className='container'>
 				<div className="header">
 					<h1 className="co-me">Contact Me</h1>
 					<p className="sub">Hi there, contact me to ask me about anything you have in mind.</p>
 				</div>
 
 				<form className="form-section">
-
+      
 					<div className="form-inline">
-						<div className="form-control first">
-							<label className="form-label" for="first_name">
-								First Name
+						<div className="firstname">
+							<label className="firstname-label" for="first_name">
+								First name
 							</label>
 							<input
-								className="form-input"
+								className="firstname-input"
 								type="text"
 								id="first_name"
 								placeholder="Enter your first name"
@@ -28,12 +28,12 @@ const contact = () => {
 							/>
 						</div>
 
-						<div className="form-control last">
-							<label className="form-label" for="last_name">
-								Last Name
+						<div className="lastname">
+							<label className="lastname-label" for="last_name">
+								Last name
 							</label>
 							<input
-								className="form-input"
+								className="lastname-input"
 								type="text"
 								id="last_name"
 								placeholder="Enter your last name"
@@ -42,12 +42,12 @@ const contact = () => {
 						</div>
 					</div>
 
-					<div className="form-control">
-						<label className="form-label" for="email">
+					<div className="email">
+						<label className="email-label" for="email">
 							Email
 						</label>
 						<input
-							className="form-input"
+							className="email-input"
 							type="email"
 							id="email"
 							placeholder="yourname@email.com"
@@ -55,8 +55,8 @@ const contact = () => {
 						/>
 					</div>
 
-				<div className="form-control">
-						<label className="form-label" for="Meesage" id="message">
+				<div className="message">
+						<label className="message-label" for="Meesage" id="message">
 							Message
 						</label>
 						<textarea
@@ -78,9 +78,10 @@ const contact = () => {
 					<button type="submit" id="btn__submit" className="submit">
 						Send message
 					</button>
+          
 				</form>
-			</div>
-			<Footer />
+        </div>
+        <Footer />
 		</div>
 	);
 };
